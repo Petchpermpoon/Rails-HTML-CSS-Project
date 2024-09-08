@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.color{
+    color: #0E4BF1;
+    color: #FFF;
+    color: #000;
+    color: #707070;
+    color: #e6e5e5;
+    color: #DDD;
+    color: #4DA3FF;
+    color: #FFE6AC;
+    color: #E7D1FC;
+    color: #fff;
+}
+
+body{
+    min-height: 100vh;
+    background-color: #0E4BF1;
+}
+
+nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 250px;
+    height: 100%;
+    background-color: #fff;
+    padding: 10px 14px;
+}
+
+nav .logo-cl{
+    display: flex;
+    align-items: center;
+}
+
+nav .logo-img{
+    display: flex;
+    justify-content: center;
+    min-width: 45px;
+}
+
+nav .logo-img i{
+    font-size: 40px;
+    min-width: 45px;
+    color: #4DA3FF;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+nav .logo-cl .logo-name{
+    font-size: 22px;
+    font-weight: 600;
+    margin-left: 14px;
+    color: #000;
+}
+
+nav .menu-side{
+    margin-top: 40px;
+    height: calc(100% - 90px);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.menu-side li{
+    list-style: none;
+}
+
+.menu-side li a{
+    display: flex;
+    align-items: center;
+    height: 50px;
+    text-decoration: none;
+    position: relative;
+
+    i{
+        font-size: 24px;
+        min-width: 45px;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #707070;
+    }
+}
+
+.nav-links li a:hover:before{
+    content: '';
+    position: absolute;
+    left: -7px;
+    height: 5px;
+    width: 5px;
+    background-color: #4DA3FF;
+    border-radius: 50%;
+}
+
+.menu-side li a .item-name{
+    font-size: 18px;
+    font-weight: 400;
+    color: #707070;
+}
+
+.menu-side .mode{
+    display: flex;
+    align-items: center;
+}
+
+.menu-side .mode-toggle{
+    position: absolute;
+    right: 14px;
+    height: 50px;
+    min-width: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.mode-toggle .switch{
+    position: relative;
+    display: inline-block;
+    height: 22px;
+    width: 40px;
+    border-radius: 25px;
+    background-color: #707070;
+}
+
+.switch:before{
+    content: '';
+    position: absolute;
+    left: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 15px;
+    width: 15px;
+    background-color: #fff;
+    border-radius: 50%;
+}
+
+.nav-links li a:hover i,
+.nav-links li a:hover .item-name{
+    color: #4DA3FF;
+}
