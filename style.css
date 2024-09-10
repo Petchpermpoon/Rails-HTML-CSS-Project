@@ -8,7 +8,7 @@
 
 body{
     min-height: 100vh;
-    background-color: #0E4BF1;
+    /* background-color: #0E4BF1; */
 }
 
 nav{
@@ -18,7 +18,7 @@ nav{
     width: 250px;
     height: 100%;
     background-color: #fff;
-    padding: 10px 14px;
+    padding: 16px 16px;
     border-right: 1px solid #e6e5e5;
 }
 
@@ -66,6 +66,7 @@ nav .menu-side{
     height: 50px;
     text-decoration: none;
     position: relative;
+    cursor: pointer;
 
     i{
         font-size: 24px;
@@ -167,12 +168,12 @@ nav .menu-side{
     width: calc(100% - 250px);
     left: 250px;
     height: 100vh;
-    padding: 10px 14px;
+    padding: 16px 32px;
 }
 
 .dashboard .top{
     top: 0;
-    padding: 10px 14px;
+    padding: 16px 32px;
     position: fixed;
     left: 250px;
     display: flex;
@@ -202,7 +203,7 @@ nav .menu-side{
     background-color: #fff;
     padding: 0 25px 0 50px;
     border: 1px solid #e6e5e5;
-    border-radius: 5px;
+    border-radius: 10px;
     color: #000;
     font-size: 15px;
     font-weight: 400;
@@ -269,7 +270,16 @@ nav .menu-side{
     background-color: #a1baff;
     border-radius: 12px;
     padding: 15px 20px;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1)
+    cursor: pointer;
+    gap: 10px;
+}
+
+.dash-content .boxes .box i{
+    padding-top: 10px;
+}
+
+.dash-content .boxes .box:hover{
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.5)
 }
 
 .boxes .box i{
@@ -326,13 +336,22 @@ nav .menu-side{
 
 .dashboard .activity-content .activity-data{
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    width: 100%;
 }
 
-.activity-content .activity-data{
+.activity-content .activity-data .data-table{
     display: flex;
+    overflow: auto;
+    height: 290px;
+    justify-content: space-between;
+    width: 100%;
+    cursor: pointer;
+    padding: 16px;
+}
+
+.activity-content .activity-data .data-table:hover{
+    border: 1px solid #4DA3FF;
+    border-radius: 12px;
 }
 
 .activity-data .data{
