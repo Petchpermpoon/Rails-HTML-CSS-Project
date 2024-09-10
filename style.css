@@ -54,10 +54,12 @@ nav .menu-side{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    padding-bottom: 8px;
 }
 
 .menu-side li{
     list-style: none;
+    padding-bottom: 10px;
 }
 
 .menu-side li a{
@@ -100,26 +102,6 @@ nav .menu-side{
     align-items: center;
 }
 
-.menu-side .mode-toggle{
-    position: absolute;
-    right: 14px;
-    height: 50px;
-    min-width: 45px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-}
-
-.mode-toggle .switch{
-    position: relative;
-    display: inline-block;
-    height: 22px;
-    width: 40px;
-    border-radius: 25px;
-    background-color: #707070;
-}
-
 .switch:before{
     content: '';
     position: absolute;
@@ -138,7 +120,7 @@ nav .menu-side{
 }
 
 .menu-side .logout-mode{
-    padding-top: 10px;
+    padding-top: 24px;
     border-top: 1px solid #e6e5e5;
 }
 
@@ -267,7 +249,7 @@ nav .menu-side{
     flex-direction: column;
     align-items: center;
     width: calc(100% / 3 - 15px);
-    background-color: #a1baff;
+    background-color: #abc0fb;
     border-radius: 12px;
     padding: 15px 20px;
     cursor: pointer;
@@ -370,4 +352,5 @@ nav .menu-side{
     font-weight: 400;
     margin-top: 20px;
     white-space: nowrap;
+    color: #707070;
 }
