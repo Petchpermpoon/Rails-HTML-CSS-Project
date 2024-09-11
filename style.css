@@ -6,11 +6,6 @@
     font-family: 'Poppins', sans-serif;
 }
 
-body{
-    min-height: 100vh;
-    /* background-color: #0E4BF1; */
-}
-
 nav{
     position: fixed;
     top: 0;
@@ -25,20 +20,29 @@ nav{
 nav .logo-cl{
     display: flex;
     align-items: center;
+    justify-content: center;
+}
+
+nav .logo{
+    display: flex;
+    justify-content: center;
+    min-width: 40px;
 }
 
 nav .logo-img{
+    width: 50px;
+    height: 50px;
+    background-color: #4DA3FF;
+    border-radius: 50%;
     display: flex;
+    align-items: center;
     justify-content: center;
-    min-width: 45px;
 }
 
-nav .logo-img i{
-    font-size: 40px;
-    min-width: 45px;
-    color: #4DA3FF;
-    object-fit: cover;
-    border-radius: 50%;
+nav .logo-img .text{
+    color: #fff;
+    font-size: 24px;
+    font-weight: 600;
 }
 
 nav .logo-cl .logo-name{
@@ -49,7 +53,7 @@ nav .logo-cl .logo-name{
 }
 
 nav .menu-side{
-    margin-top: 60px;
+    margin-top: 50px;
     height: calc(100% - 90px);
     display: flex;
     flex-direction: column;
@@ -166,7 +170,7 @@ nav .menu-side{
 }
 
 .dashboard .top .hamburger{
-    font-size: 26px;
+    font-size: 35px;
     color: #000;
 }
 
@@ -198,14 +202,26 @@ nav .menu-side{
     left: 15px;
     font-size: 22px;
     top: 50%;
-    z-index: 10;
+    z-index: 9999;
     transform: translateY(-50%);
     color: #707070;
 }
 
-.dashboard .top .profile{
-    font-size: 40px;
-    color: #707070;
+.top .profile{
+    min-width: 50px;
+    min-height: 50px;
+    border-radius: 50%;
+    overflow: hidden;
+    object-fit: cover;
+    position: relative;
+}
+
+.profile img{
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 .dashboard .dash-content{
@@ -242,6 +258,7 @@ nav .menu-side{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .dash-content .boxes .box{
@@ -329,6 +346,7 @@ nav .menu-side{
     width: 100%;
     cursor: pointer;
     padding: 16px;
+    gap: 16px;
 }
 
 .activity-content .activity-data .data-table:hover{
@@ -353,4 +371,11 @@ nav .menu-side{
     margin-top: 20px;
     white-space: nowrap;
     color: #707070;
+}
+
+@media (max-width: 768px){
+    .dash-content .boxes .box{
+        width: calc(100% / 1 - 15px);
+        margin-top: 15px;
+    }
 }
